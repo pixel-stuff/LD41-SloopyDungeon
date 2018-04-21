@@ -19,10 +19,10 @@ public class GameStateManager : MonoBehaviour {
 			//If I am the first instance, make me the Singleton
       if(SceneManager.GetActiveScene().name.ToLower().Contains("menu")){
 			m_gameState = GameState.Menu;
-      }else if(SceneManager.GetActiveScene().name.ToLower().Contains("level")){
-        m_gameState = GameState.Playing;
-      }else if(SceneManager.GetActiveScene().name.ToLower().Contains("gameover")){
-        m_gameState = GameState.GameOver;
+			}else if(SceneManager.GetActiveScene().name.ToLower().Contains("gameover")){
+				m_gameState = GameState.GameOver;
+      }else {
+				m_gameState = GameState.Playing;
       }
 			m_instance = this;
 			DontDestroyOnLoad(this.gameObject);

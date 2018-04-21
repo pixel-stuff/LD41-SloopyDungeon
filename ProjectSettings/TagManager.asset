@@ -13,6 +13,8 @@ TagManager:
   - Monster
   - player
   - Boss
+  - Door
+  - Sword
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - World
   - 
   - 
   - 

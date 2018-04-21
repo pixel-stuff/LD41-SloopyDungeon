@@ -15,6 +15,7 @@ TagManager:
   - Boss
   - Door
   - Sword
+  - DeadFall
   layers:
   - Default
   - TransparentFX

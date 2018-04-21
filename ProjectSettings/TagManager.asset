@@ -10,6 +10,9 @@ TagManager:
   - MenuManager
   - GameOverManager
   - PlayerManager
+  - Monster
+  - player
+  - Boss
   layers:
   - Default
   - TransparentFX

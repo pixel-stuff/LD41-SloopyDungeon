@@ -24,11 +24,19 @@ public class LevelContainer : MonoBehaviour {
     anchorPositions.Add(InputDirection.RIGHT,rightAnchor.position);
 
     InputManager.m_instance.onInputMaintain += handleInputMaintain;
+    InputManager.m_instance.onInputEnter += handleInputEnter;
 
 	}
+
+  /// <summary>
+  /// Handles the input that are held pressed.
+  /// </summary>
+  void handleInputEnter(InputDirection _direction){
+    GetComponent<Rigidbody>().AddForceAtPosition(Vector3.up*4.0f,anchorPositions[_direction],ForceMode.Impulse);
+  }
 	
   /// <summary>
-  /// Handles the input.
+  /// Handles the input that are held pressed.
   /// </summary>
   void handleInputMaintain(InputDirection _direction){
     GetComponent<Rigidbody>().AddForceAtPosition(Vector3.up*2.0f,anchorPositions[_direction],ForceMode.Impulse);
@@ -46,5 +54,6 @@ public class LevelContainer : MonoBehaviour {
   /// </summary>
   void OnDestroy() {
     InputManager.m_instance.onInputMaintain -= handleInputMaintain;
+    InputManager.m_instance.onInputEnter -= handleInputEnter;
   }
 }

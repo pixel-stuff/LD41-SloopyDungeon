@@ -23,8 +23,8 @@ public class LevelContainer : MonoBehaviour {
     anchorPositions.Add(InputDirection.LEFT,leftAnchor.position);
     anchorPositions.Add(InputDirection.RIGHT,rightAnchor.position);
 
-    InputManager.m_instance.onInputMaintain += handleInputMaintain;
-    InputManager.m_instance.onInputEnter += handleInputEnter;
+    InputManager.m_instance.onKeyBoardInputMaintain += handleInputMaintain;
+    InputManager.m_instance.onKeyBoardInputEnter += handleInputEnter;
 
 	}
 
@@ -53,7 +53,7 @@ public class LevelContainer : MonoBehaviour {
   /// Ons the destroy.
   /// </summary>
   void OnDestroy() {
-    InputManager.m_instance.onInputMaintain -= handleInputMaintain;
-    InputManager.m_instance.onInputEnter -= handleInputEnter;
+    InputManager.m_instance.onKeyBoardInputMaintain -= handleInputMaintain;
+    InputManager.m_instance.onKeyBoardInputEnter -= handleInputEnter;
   }
 }

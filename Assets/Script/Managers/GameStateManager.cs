@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using UnityEngine.SceneManagement;
 
 public enum GameState{
 	Menu,
@@ -16,7 +17,13 @@ public class GameStateManager : MonoBehaviour {
 	void Awake(){
 		if(m_instance == null){
 			//If I am the first instance, make me the Singleton
+      if(SceneManager.GetActiveScene().name.ToLower().Contains("menu")){
 			m_gameState = GameState.Menu;
+      }else if(SceneManager.GetActiveScene().name.ToLower().Contains("level")){
+        m_gameState = GameState.Playing;
+      }else if(SceneManager.GetActiveScene().name.ToLower().Contains("gameover")){
+        m_gameState = GameState.GameOver;
+      }
 			m_instance = this;
 			DontDestroyOnLoad(this.gameObject);
 		}else{

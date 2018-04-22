@@ -1406,7 +1406,7 @@ Transform:
   m_LocalScale: {x: 2.7716959, y: 2.7716959, z: 2.7716959}
   m_Children: []
   m_Father: {fileID: 551054530}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 7.8760004, y: 14.291, z: -8.124001}
 --- !u!227 &427142517
 BillboardRenderer:
@@ -3526,6 +3526,10 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4824027396373402, guid: fb9ec515bab7cc24e85f70887a5d50c1, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb9ec515bab7cc24e85f70887a5d50c1, type: 2}
   m_IsPrefabParent: 0
@@ -4236,7 +4240,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1777944746
+  randomSeed: -1834947785
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -8339,7 +8343,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 122777289
+  randomSeed: -1382793687
   InitialModule:
     serializedVersion: 3
     enabled: 1

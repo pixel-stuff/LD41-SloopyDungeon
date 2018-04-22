@@ -13,6 +13,9 @@ public class RespawnOnDeadFall : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (this.transform.position.y < -1000) {
+			OnTouchDeadFall.Invoke ();
+		}
 	}
 
 	public void RespawnOnTransform(){

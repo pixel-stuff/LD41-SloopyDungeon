@@ -1,54 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
-using System.Linq;
 
-[RequireComponent(typeof(Rigidbody))]
-public class LevelContainer : MonoBehaviour {
+public class LevelContainer2 : MonoBehaviour {
 
   //UNITY VAR
   [Header("Anchor")]
-  [SerializeField] Transform upAnchor;
-  [SerializeField] Transform downAnchor;
-  [SerializeField] Transform leftAnchor;
-  [SerializeField] Transform rightAnchor;
-
-  [Header("Control")]
   [SerializeField] float yRotationLock = 25.0f;
   [SerializeField] float maxRotation = 30.0f;
 
   // VAR
-  Dictionary<InputDirection,Vector3> anchorPositions;
+  Dictionary<InputDirection,Vector3> rotationOrientation;
   Vector3 rotationTemp;
+  Vector3 currentAnglesToApply;
 
 	/// <summary>
   /// Start this instance.
   /// </summary>
-	void Start () {
-    anchorPositions = new Dictionary<InputDirection, Vector3>();
-    anchorPositions.Add(InputDirection.UP,downAnchor.position);
-    anchorPositions.Add(InputDirection.DOWN,upAnchor.position);
-    anchorPositions.Add(InputDirection.LEFT,rightAnchor.position);
-    anchorPositions.Add(InputDirection.RIGHT,leftAnchor.position);
+  void Start () {
+    rotationOrientation = new Dictionary<InputDirection, Vector3>();
+    rotationOrientation.Add(InputDirection.UP,new Vector3(1.0f,0.0f,0.0f));
+    rotationOrientation.Add(InputDirection.DOWN,new Vector3(-1.0f,0.0f,0.0f));
+    rotationOrientation.Add(InputDirection.LEFT,new Vector3(0.0f,0.0f,1.0f));
+    rotationOrientation.Add(InputDirection.RIGHT,new Vector3(0.0f,0.0f,-1.0f));
+
+    currentAnglesToApply = Vector3.zero;
 
     InputManager.m_instance.onKeyBoardInputMaintain += handleInputMaintain;
     InputManager.m_instance.onKeyBoardInputEnter += handleInputEnter;
-
 	}
 
   /// <summary>
   /// Handles the input that are held pressed.
   /// </summary>
   void handleInputEnter(InputDirection _direction){
-    var normal = transform.TransformDirection(GetComponent<MeshFilter>().mesh.normals[0]);
-    GetComponent<Rigidbody>().AddForceAtPosition(normal*7.0f,anchorPositions[_direction],ForceMode.Impulse);
-  }
+    AddAnglesToApply(rotationOrientation[_direction]*0.8f);
+
+   }
 	
   /// <summary>
   /// Handles the input that are held pressed.
   /// </summary>
   void handleInputMaintain(InputDirection _direction){
-    var normal = transform.TransformDirection(GetComponent<MeshFilter>().mesh.normals[0]);
-    GetComponent<Rigidbody>().AddForceAtPosition(normal*2.0f,anchorPositions[_direction],ForceMode.Impulse);
+    AddAnglesToApply(rotationOrientation[_direction]*0.5f);
+  }
+
+  void AddAnglesToApply(Vector3 _toAdd){
+    currentAnglesToApply += _toAdd;
   }
 
   /// <summary>
@@ -57,26 +54,41 @@ public class LevelContainer : MonoBehaviour {
   void Update() {
     rotationTemp = transform.eulerAngles;
 
-    //block Y rotation
-    rotationTemp.y = yRotationLock;
+    rotationTemp += currentAnglesToApply;
 
+    currentAnglesToApply /= 1.50f;
+
+
+    UpdateControleAngles();
+
+    rotationTemp.y = yRotationLock;
+    transform.eulerAngles = rotationTemp;
+  }
+
+  void UpdateControleAngles(){
     //block X rotation if needed
     if(rotationTemp.x > 180 && rotationTemp.x < (360 - maxRotation)){
+      currentAnglesToApply.x = 0.0f;
       rotationTemp.x = -maxRotation;
     }else if(rotationTemp.x > maxRotation && rotationTemp.x <= 180){
+      currentAnglesToApply.x = 0.0f;
       rotationTemp.x = maxRotation;
     }
 
     //block z rotation if needed
     if(rotationTemp.z > 180 && rotationTemp.z < (360 - maxRotation)){
+      currentAnglesToApply.z = 0.0f;
       rotationTemp.z = -maxRotation;
     }else if(rotationTemp.z > maxRotation && rotationTemp.z <= 180){
+      currentAnglesToApply.z = 0.0f;
       rotationTemp.z = maxRotation;
     }
 
-    transform.eulerAngles = rotationTemp;
-    transform.localPosition = Vector3.zero;
+    if(Mathf.Abs(currentAnglesToApply.x) < Mathf.Epsilon && Mathf.Abs(currentAnglesToApply.z) < Mathf.Epsilon){
+      currentAnglesToApply = Vector3.zero;
+    }
   }
+
 
   /// <summary>
   /// Ons the destroy.

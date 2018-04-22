@@ -1347,7 +1347,33 @@ Prefab:
       propertyPath: m_Convex
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4975854009280076, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216843962531894, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786363973386992, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487331222668672, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4786363973386992, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4487331222668672, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114819932409927732, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
+    - {fileID: 54582623909583474, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d6078c4669dd445d2a3507c004d7bfd8, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &564577356 stripped
@@ -3201,6 +3227,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5effcff20dd4b1749a91a21439d1a53b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1409439989 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1693198377032342, guid: d6078c4669dd445d2a3507c004d7bfd8,
+    type: 2}
+  m_PrefabInternal: {fileID: 564577355}
+--- !u!114 &1409439990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1409439989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 093e0a451add849ac81b71c24da11bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  yRotationLock: 25
+  maxRotation: 30
 --- !u!1001 &1414804694
 Prefab:
   m_ObjectHideFlags: 0

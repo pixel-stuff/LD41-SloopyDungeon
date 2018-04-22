@@ -41,6 +41,7 @@ public class UIPlayer : MonoBehaviour {
     foreach (var go in swords) {
       go.SetActive(false);
     }
+
   }
 
   public void AddHeart() {

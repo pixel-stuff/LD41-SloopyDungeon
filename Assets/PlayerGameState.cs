@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerGameState : MonoBehaviour {
 
 	public void ResetCurrentLevel(){
-		Application.LoadLevel(Application.loadedLevel);
+    LevelManager.m_instance.ReloadCurrentScene();
 	}
 
 	public void GotoNextLevel(){
-		StartCoroutine (changeWorld());
+    LevelManager.m_instance.LoadNextScene();
 
 	}
 

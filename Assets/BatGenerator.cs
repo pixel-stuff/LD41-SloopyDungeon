@@ -10,6 +10,8 @@ public class BatGenerator : MonoBehaviour {
 	public GameObject BatPrefab;
 	public int BatsCount = 10;
 	public int CooldownSec = 10;
+	public int PreCoolDown = 8;
+	private bool PreCoolDownSend = false;
 
 
 	public Vector3 BatSpeed;
@@ -35,8 +37,14 @@ public class BatGenerator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		TimeBetweenGeneration += Time.deltaTime;
+		if (TimeBetweenGeneration > PreCoolDown && !PreCoolDownSend) {
+			OnLaunchPreSpawnAnimation.Invoke ();
+			PreCoolDownSend = true;
+		}
 		if (TimeBetweenGeneration > CooldownSec) {
+			OnBatSpawning.Invoke ();
 			TimeBetweenGeneration = 0;
+			PreCoolDownSend = false;
 			foreach(GameObject bat in CurrentsBats){
 				Vector3 random = Random.onUnitSphere;
 				bat.transform.localPosition = new Vector3 (random.x* PositionMultiplicator.x,random.y* PositionMultiplicator.y,random.z* PositionMultiplicator.z);

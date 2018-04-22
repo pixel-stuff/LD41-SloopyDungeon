@@ -5,7 +5,8 @@ using UnityEngine.Events;
 
 public class Player : TypedObject {
 
-	[SerializeField] UnityEvent OnMonsterTouch;
+  [SerializeField] UnityEvent OnSwordUse;
+  [SerializeField] UnityEvent OnPlayerBeingHit;
 	[SerializeField] UnityEvent OnDoorTouch;
 
 	public override MyType GetType()
@@ -17,13 +18,14 @@ public class Player : TypedObject {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Monster") {
 			Debug.Log (this.gameObject.name + "TOUCH the Monster");
-			OnMonsterTouch.Invoke ();
-			if (this.gameObject.GetComponent<Inventory> ().HaveSword()) {
+      if (this.gameObject.GetComponent<Inventory> ().HaveSword()) {
+        OnPlayerBeingHit.Invoke ();
 				if (other.GetComponent<Life> ()) {
 					other.GetComponent<Life> ().TakeDommage (1);
 					this.gameObject.GetComponent<Inventory> ().LostSword ();
 				}
-			} else {
+      } else {
+        OnPlayerBeingHit.Invoke ();
 				if (other.GetComponent<Life> ()) {
 					this.GetComponent<Life> ().TakeDommage (1);
 				}

@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class Inventory : MonoBehaviour {
 
 	[SerializeField] UnityEvent OnTakingTheSword;
+	[SerializeField] UnityEvent OnLoosingASword;
 
 	public int SwordCount = 0;
 
@@ -20,6 +21,7 @@ public class Inventory : MonoBehaviour {
 
 	public void LostSword(){
 		SwordCount--;
+		OnLoosingASword.Invoke ();
 	}
 
 	public bool HaveSword(){

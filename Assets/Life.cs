@@ -17,6 +17,9 @@ public class Life : MonoBehaviour {
 
 	public void Init(){
 		CurrentLife = MaxLife;
+		for (int i = 0; i < MaxLife; i++) {
+			OnHeal.Invoke ();
+		}
 	}
 		
 	public void TakeDommage(int nbDommage){

@@ -19,7 +19,7 @@ public class Player : TypedObject {
 		if (other.gameObject.tag == "Monster") {
 			Debug.Log (this.gameObject.name + "TOUCH the Monster");
       if (this.gameObject.GetComponent<Inventory> ().HaveSword()) {
-        OnPlayerBeingHit.Invoke ();
+        OnSwordUse.Invoke ();
 				if (other.GetComponent<Life> ()) {
 					other.GetComponent<Life> ().TakeDommage (1);
 					this.gameObject.GetComponent<Inventory> ().LostSword ();

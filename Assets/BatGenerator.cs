@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class BatGenerator : MonoBehaviour {
+
+	[SerializeField] UnityEvent OnBatSpawning;
+	[SerializeField] UnityEvent OnLaunchPreSpawnAnimation;
 
 	public GameObject BatPrefab;
 	public int BatsCount = 10;

@@ -19,8 +19,7 @@ public class AudioManager : MonoBehaviour {
 	}
 	#endregion Singleton
 
-	[SerializeField]
-	private string m_backgroundAudioSource;
+	[SerializeField] string m_backgroundAudioSource;
 
 	private static Transform m_transform;
 
@@ -45,6 +44,8 @@ public class AudioManager : MonoBehaviour {
 		Destroy (go, newClip.length);
 
 	}
+
+
 
 	
 	// Update is called once per frame

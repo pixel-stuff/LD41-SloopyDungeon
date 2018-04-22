@@ -4038,6 +4038,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 114299969966843362, guid: fb9ec515bab7cc24e85f70887a5d50c1,
+        type: 2}
+      propertyPath: MaxLife
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb9ec515bab7cc24e85f70887a5d50c1, type: 2}
   m_IsPrefabParent: 0
@@ -13796,6 +13801,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114860414382093020, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnTakingTheSword.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1077536567}
+    - target: {fileID: 114860414382093020, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnLoosingASword.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1077536567}
     - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
       propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -13818,17 +13833,12 @@ Prefab:
       objectReference: {fileID: 1077536567}
     - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
+      propertyPath: OnTakingLetalDmg.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
       propertyPath: OnHeal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1077536567}
-    - target: {fileID: 114084024709271284, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnTakingTheSword.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1077536567}
-    - target: {fileID: 114084024709271284, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnLoosingASword.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1077536567}
     m_RemovedComponents: []

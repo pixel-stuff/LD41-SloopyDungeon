@@ -14,15 +14,33 @@ public class Player : TypedObject {
 		return MyType.Player;
 	}
 		
+	private float AttackOnMobCooldown = 1;
+	private bool CanStrike = true;
+
+	void Update () {
+		if(!CanStrike){
+			AttackOnMobCooldown -= Time.deltaTime;
+			Debug.Log (this.gameObject.name + "Cooldown");
+			if (AttackOnMobCooldown < 0) {
+				CanStrike = true;
+				AttackOnMobCooldown = 1;
+			}
+		}
+	}
+
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "Monster") {
 			Debug.Log (this.gameObject.name + "TOUCH the Monster");
       if (this.gameObject.GetComponent<Inventory> ().HaveSword()) {
-        OnSwordUse.Invoke ();
-				if (other.GetComponent<Life> ()) {
-					other.GetComponent<Life> ().TakeDommage (1);
+				if(CanStrike){
+        			OnSwordUse.Invoke ();
+					if (other.GetComponent<Life> ()) {
+						other.GetComponent<Life> ().TakeDommage (1);
+						Debug.Log (this.gameObject.name + "TOUCH the Monster and use sword on " + other.gameObject.name);
+						CanStrike = false;
 					//this.gameObject.GetComponent<Inventory> ().LostSword ();
+					}
 				}
       } else {
         OnPlayerBeingHit.Invoke ();

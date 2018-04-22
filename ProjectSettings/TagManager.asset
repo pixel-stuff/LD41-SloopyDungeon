@@ -16,6 +16,7 @@ TagManager:
   - Door
   - Sword
   - DeadFall
+  - HeavyObject
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - 
   - 
   - World
-  - 
+  - Decoration
   - 
   - 
   - 

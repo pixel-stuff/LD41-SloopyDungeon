@@ -1,35 +1,68 @@
 fileFormatVersion: 2
-guid: 1dd56815ed41a4d58b3d2e16afd69eb0
-timeCreated: 1524416034
+guid: 671bc4c38caf54b7892145913929a030
+timeCreated: 1524422014
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
-    100000: pCylinder5
-    100002: pCylinder7
-    100004: pCylinder8
-    100006: polySurface16
-    100008: polySurface17
-    100010: //RootNode
-    100012: transform10
-    100014: transform11
-    100016: transform12
-    400000: pCylinder5
-    400002: pCylinder7
-    400004: pCylinder8
-    400006: polySurface16
-    400008: polySurface17
-    400010: //RootNode
-    400012: transform10
-    400014: transform11
-    400016: transform12
+    100000: group2
+    100002: pCylinder5
+    100004: pCylinder7
+    100006: pCylinder8
+    100008: polySurface16
+    100010: polySurface17
+    100012: polySurface87
+    100014: polySurface88
+    100016: polySurface89
+    100018: polySurface90
+    100020: polySurface91
+    100022: polySurface92
+    100024: polySurface93
+    100026: //RootNode
+    100028: transform10
+    100030: transform11
+    100032: transform12
+    100034: transform82
+    100036: transform83
+    100038: transform84
+    100040: transform85
+    400000: group2
+    400002: pCylinder5
+    400004: pCylinder7
+    400006: pCylinder8
+    400008: polySurface16
+    400010: polySurface17
+    400012: polySurface87
+    400014: polySurface88
+    400016: polySurface89
+    400018: polySurface90
+    400020: polySurface91
+    400022: polySurface92
+    400024: polySurface93
+    400026: //RootNode
+    400028: transform10
+    400030: transform11
+    400032: transform12
+    400034: transform82
+    400036: transform83
+    400038: transform84
+    400040: transform85
     2100000: lambert1
-    2300000: pCylinder8
-    2300002: polySurface17
-    3300000: pCylinder8
-    3300002: polySurface17
-    4300000: polySurface17
-    4300002: pCylinder8
+    2300000: polySurface88
+    2300002: polySurface90
+    2300004: polySurface91
+    2300006: polySurface92
+    2300008: polySurface93
+    3300000: polySurface88
+    3300002: polySurface90
+    3300004: polySurface91
+    3300006: polySurface92
+    3300008: polySurface93
+    4300000: polySurface90
+    4300002: polySurface91
+    4300004: polySurface92
+    4300006: polySurface93
+    4300008: polySurface88
     9500000: //RootNode
   externalObjects: {}
   materials:

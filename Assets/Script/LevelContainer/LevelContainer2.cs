@@ -89,6 +89,10 @@ public class LevelContainer2 : MonoBehaviour {
     }
   }
 
+  public void resetLevel(){
+    currentAnglesToApply = Vector3.zero;
+    transform.eulerAngles = Vector3.zero;
+  }
 
   /// <summary>
   /// Ons the destroy.

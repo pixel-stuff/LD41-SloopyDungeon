@@ -19,10 +19,14 @@ public class Player : TypedObject {
 			Debug.Log (this.gameObject.name + "TOUCH the Monster");
 			OnMonsterTouch.Invoke ();
 			if (this.gameObject.GetComponent<Inventory> ().HaveSword()) {
-				other.GetComponent<Life> ().TakeDommage (1);
-				this.gameObject.GetComponent<Inventory> ().LostSword ();
+				if (other.GetComponent<Life> ()) {
+					other.GetComponent<Life> ().TakeDommage (1);
+					this.gameObject.GetComponent<Inventory> ().LostSword ();
+				}
 			} else {
-				this.GetComponent<Life> ().TakeDommage (1);
+				if (other.GetComponent<Life> ()) {
+					this.GetComponent<Life> ().TakeDommage (1);
+				}
 			}
 			this.gameObject.GetComponent<Rigidbody> ().AddForce (other.GetComponent<Monster>().Reflect(this.transform.position));
 		}

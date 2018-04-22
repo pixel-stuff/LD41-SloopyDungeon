@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -13796,26 +13796,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114084024709271284, guid: fb731d3a312e24847baba35e6dbb5e3f,
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
-      propertyPath: OnTakingTheSword.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1077536567}
-    - target: {fileID: 114084024709271284, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnLoosingASword.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1077536567}
-    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnTakingNonLetalDmg.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1077536567}
-    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnHeal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1077536567}
+      objectReference: {fileID: 564577357}
     - target: {fileID: 114659958114951196, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
       propertyPath: OnTouchDeadFall.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -13826,11 +13811,26 @@ Prefab:
       propertyPath: RespawnGameObject
       value: 
       objectReference: {fileID: 1288280805}
-    - target: {fileID: 212724986118210264, guid: fb731d3a312e24847baba35e6dbb5e3f,
+    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
-      propertyPath: m_Materials.Array.data[0]
+      propertyPath: OnTakingNonLetalDmg.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+      objectReference: {fileID: 1077536567}
+    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnHeal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1077536567}
+    - target: {fileID: 114084024709271284, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnTakingTheSword.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1077536567}
+    - target: {fileID: 114084024709271284, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnLoosingASword.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1077536567}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}
   m_IsPrefabParent: 0

@@ -13,6 +13,8 @@ public class LevelContainer2 : MonoBehaviour {
   Vector3 rotationTemp;
   Vector3 currentAnglesToApply;
 
+	private bool RotationIsLock = false;
+
 	/// <summary>
   /// Start this instance.
   /// </summary>
@@ -52,17 +54,19 @@ public class LevelContainer2 : MonoBehaviour {
   /// Update this instance.
   /// </summary>
   void Update() {
-    rotationTemp = transform.eulerAngles;
+		if (!RotationIsLock) {
+			rotationTemp = transform.eulerAngles;
 
-    rotationTemp += currentAnglesToApply;
+			rotationTemp += currentAnglesToApply;
 
-    currentAnglesToApply /= 1.50f;
+			currentAnglesToApply /= 1.50f;
 
 
-    UpdateControleAngles();
+			UpdateControleAngles ();
 
-    rotationTemp.y = yRotationLock;
-    transform.eulerAngles = rotationTemp;
+			rotationTemp.y = yRotationLock;
+			transform.eulerAngles = rotationTemp;
+		}
   }
 
   void UpdateControleAngles(){
@@ -101,4 +105,8 @@ public class LevelContainer2 : MonoBehaviour {
     InputManager.m_instance.onKeyBoardInputMaintain -= handleInputMaintain;
     InputManager.m_instance.onKeyBoardInputEnter -= handleInputEnter;
   }
+
+	public void LockRotation(){
+		RotationIsLock = true;
+	}
 }

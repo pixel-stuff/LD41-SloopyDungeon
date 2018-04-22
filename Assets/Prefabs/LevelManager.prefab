@@ -53,7 +53,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelScene:
   - LevelScene
-  - LevelScene2
-  - LevelScene3
-  - LevelScene4
-  - LevelScene5
+  - LevelScene
+  - LevelScene
+  - LevelScene
+  - LevelScene

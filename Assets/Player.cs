@@ -22,7 +22,7 @@ public class Player : TypedObject {
         OnSwordUse.Invoke ();
 				if (other.GetComponent<Life> ()) {
 					other.GetComponent<Life> ().TakeDommage (1);
-					this.gameObject.GetComponent<Inventory> ().LostSword ();
+					//this.gameObject.GetComponent<Inventory> ().LostSword ();
 				}
       } else {
         OnPlayerBeingHit.Invoke ();

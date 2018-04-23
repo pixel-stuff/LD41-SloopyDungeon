@@ -7,7 +7,22 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MenuScene.unity
+    guid: 4eadaeee9f6924ed6a7a52fb822b3359
   - enabled: 1
     path: Assets/Scenes/LevelScene.unity
+    guid: 564fb5c47a0e14a56bf848a101fa6440
   - enabled: 1
     path: Assets/Scenes/GameOverScene.unity
+    guid: 7d051663f0f124e81b007c4c8afadd95
+  - enabled: 1
+    path: Assets/Scenes/Niveau 2.unity
+    guid: d3742d9436a51304182fecec9a269ef1
+  - enabled: 1
+    path: Assets/Scenes/Niveau 4.unity
+    guid: e02667facce2b484b817f65ad05d1b06
+  - enabled: 1
+    path: Assets/Scenes/Niveau I.unity
+    guid: 488f79116d7c44737999b22294e95b21
+  - enabled: 1
+    path: Assets/Scenes/TreasureScene.unity
+    guid: 6b25ddfd920cc472ea7964b72f699454

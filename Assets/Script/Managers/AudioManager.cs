@@ -26,8 +26,9 @@ public class AudioManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		m_transform = this.transform;
-		Play (m_backgroundAudioSource);
+   //Play (m_backgroundAudioSource);
 	}
+
 
 	public static void Play(string clipname){
 		//Create an empty game object
@@ -40,6 +41,7 @@ public class AudioManager : MonoBehaviour {
 		AudioSource source = go.AddComponent<AudioSource>();
 		source.clip = newClip;
 		//Play and destroy the component
+    source.volume = 0.25f;
 		source.Play();
 		Destroy (go, newClip.length);
 

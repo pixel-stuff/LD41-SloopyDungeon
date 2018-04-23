@@ -706,6 +706,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114934202927894518, guid: 80303b3a798b84695befc0d40f65eaad,
+        type: 2}
+      propertyPath: levelScene.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4688615665004472, guid: 80303b3a798b84695befc0d40f65eaad, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.1472707
@@ -737,6 +742,11 @@ Prefab:
     - target: {fileID: 4688615665004472, guid: 80303b3a798b84695befc0d40f65eaad, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114934202927894518, guid: 80303b3a798b84695befc0d40f65eaad,
+        type: 2}
+      propertyPath: levelScene.Array.data[4]
+      value: TreasureScene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 80303b3a798b84695befc0d40f65eaad, type: 2}

@@ -25657,6 +25657,11 @@ Prefab:
       propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
       value: StartFade
       objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: LockRotation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}
   m_IsPrefabParent: 0

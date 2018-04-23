@@ -17,6 +17,7 @@ TagManager:
   - Sword
   - DeadFall
   - HeavyObject
+  - DMGObject
   layers:
   - Default
   - TransparentFX

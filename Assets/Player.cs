@@ -30,6 +30,12 @@ public class Player : TypedObject {
 
 
 	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.tag == "DMGObject") {
+			OnPlayerBeingHit.Invoke ();
+				this.GetComponent<Life> ().TakeDommage (1);
+			this.gameObject.GetComponent<Rigidbody> ().AddForce (other.GetComponent<Monster>().Reflect(this.transform.position));
+		}
+
 		if (other.gameObject.tag == "Monster") {
 			Debug.Log (this.gameObject.name + "TOUCH the Monster");
       if (this.gameObject.GetComponent<Inventory> ().HaveSword()) {

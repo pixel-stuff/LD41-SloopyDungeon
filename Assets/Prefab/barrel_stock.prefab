@@ -606,6 +606,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4634283245861692}
+  - component: {fileID: 65436994781789456}
   m_Layer: 0
   m_Name: barrel_stock
   m_TagString: Untagged
@@ -1139,9 +1140,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877040415199328}
-  m_LocalRotation: {x: -0, y: 0.8427228, z: -0, w: 0.5383478}
-  m_LocalPosition: {x: 1.35, y: -2.14, z: -6.92}
-  m_LocalScale: {x: 0.32602307, y: 0.32602298, z: 0.32602298}
+  m_LocalRotation: {x: -0, y: 0.70415044, z: -0, w: 0.7100509}
+  m_LocalPosition: {x: -3.5561092, y: 4.512144, z: -15.052934}
+  m_LocalScale: {x: 0.90980464, y: 0.90980434, z: 0.9098039}
   m_Children:
   - {fileID: 4601549208962378}
   - {fileID: 4570515284542660}
@@ -2762,3 +2763,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1945648101589006}
   m_Mesh: {fileID: 4300032, guid: 19cf59da80a14f04f9713f3a9920c392, type: 3}
+--- !u!65 &65436994781789456
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877040415199328}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.35, y: 3.8, z: 9.34}
+  m_Center: {x: -29.95, y: 10.24, z: -9.09}

@@ -13,6 +13,21 @@ public class MovingObject : MonoBehaviour {
 	[SerializeField] UnityEvent OnMoveUp;
 	[SerializeField] UnityEvent OnMoveDown;
 
+
+	bool Right = false;
+	bool Left = false;
+	bool Up = false;
+	bool Down = false;
+	bool NotMove = false;
+
+	void ClearFlag(){
+		 Right = false;
+		 Left = false;
+		 Up = false;
+		 Down = false;
+		 NotMove = false;
+	}
+
 	private Vector3 lastPosition;
 	// Use this for initialization
 	void Start () {
@@ -20,26 +35,49 @@ public class MovingObject : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update() {
 		Vector3 SpeedVector = this.transform.localPosition - lastPosition;
+		if (SpeedVector == Vector3.zero) {
+			return;
+		}
 		float xStrength = Mathf.Abs (SpeedVector.x);
 		float zStrength = Mathf.Abs (SpeedVector.z);
 		if (xStrength + zStrength > MovingEpsilon) {
 			if (xStrength >= zStrength) {
 				if (SpeedVector.x > 0) {
-					OnMoveRight.Invoke ();
+					if (!Right) {
+						ClearFlag ();
+						Right = true;
+						OnMoveRight.Invoke ();
+					}
 				} else {
-					OnMoveLeft.Invoke ();
+					if (!Left) {
+						ClearFlag ();
+						Left = true;
+						OnMoveLeft.Invoke ();
+					}
 				}
 			} else {
 				if (SpeedVector.z > 0) {
-					OnMoveUp.Invoke ();
+					if (!Up) {
+						ClearFlag ();
+						Up = true;
+						OnMoveUp.Invoke ();
+					}
 				} else {
-					OnMoveDown.Invoke ();
+					if (!Down) {
+						ClearFlag ();
+						Down = true;
+						OnMoveDown.Invoke ();
+					}
 				}
 			}
 		} else {
-			OnStopMoving.Invoke ();
+			if (!NotMove) {
+				ClearFlag ();
+				NotMove = true;
+				OnStopMoving.Invoke ();
+			}
 		}
 		lastPosition = this.transform.localPosition;
 	}

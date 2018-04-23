@@ -636,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1c6cc98d29d064abebf36a26c74224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MovingEpsilon: 0.001
+  MovingEpsilon: 0.01
   OnMoveLeft:
     m_PersistentCalls:
       m_Calls:

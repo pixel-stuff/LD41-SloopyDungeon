@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.496413, b: 0.5748175, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2275,7 +2275,7 @@ GameObject:
   - component: {fileID: 165702734}
   - component: {fileID: 165702736}
   - component: {fileID: 165702735}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2993,7 +2993,7 @@ GameObject:
   - component: {fileID: 232515163}
   - component: {fileID: 232515165}
   - component: {fileID: 232515164}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3578,7 +3578,7 @@ GameObject:
   - component: {fileID: 293209416}
   - component: {fileID: 293209418}
   - component: {fileID: 293209417}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9014,8 +9014,8 @@ Transform:
   - {fileID: 1806165769}
   - {fileID: 1581168354}
   - {fileID: 1988512085}
-  - {fileID: 1069106828}
   - {fileID: 688789246}
+  - {fileID: 1069106828}
   m_Father: {fileID: 2043873623}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -91.73601, z: 0}
@@ -9086,7 +9086,7 @@ GameObject:
   - component: {fileID: 804662439}
   - component: {fileID: 804662441}
   - component: {fileID: 804662440}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9455,6 +9455,15 @@ Prefab:
     - target: {fileID: 1316949010633146, guid: 4bfcea99718ba3c4dbe925ff903f5bbf, type: 2}
       propertyPath: m_Name
       value: door
+      objectReference: {fileID: 0}
+    - target: {fileID: 1838336548690360, guid: 4bfcea99718ba3c4dbe925ff903f5bbf, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 65957269722011326, guid: 4bfcea99718ba3c4dbe925ff903f5bbf,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bfcea99718ba3c4dbe925ff903f5bbf, type: 2}
@@ -10146,6 +10155,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4034852755637678, guid: 492521fc9b1b3ff4a866d79bdcd7d9b8,
     type: 2}
   m_PrefabInternal: {fileID: 879925863}
+--- !u!95 &885730828 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95115402818978782, guid: 0048c921c065c40aab3a45e48df93126,
+    type: 2}
+  m_PrefabInternal: {fileID: 1158281351}
 --- !u!1 &892164611
 GameObject:
   m_ObjectHideFlags: 0
@@ -13167,7 +13181,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1643424117700800, guid: 0048c921c065c40aab3a45e48df93126, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114777370169076628, guid: 0048c921c065c40aab3a45e48df93126,
         type: 2}
@@ -13500,7 +13514,7 @@ GameObject:
   - component: {fileID: 1171662557}
   - component: {fileID: 1171662559}
   - component: {fileID: 1171662558}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14431,7 +14445,7 @@ GameObject:
   - component: {fileID: 1248052083}
   - component: {fileID: 1248052085}
   - component: {fileID: 1248052084}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21921,7 +21935,7 @@ GameObject:
   - component: {fileID: 1541124638}
   - component: {fileID: 1541124640}
   - component: {fileID: 1541124639}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24471,7 +24485,7 @@ GameObject:
   - component: {fileID: 1706352262}
   - component: {fileID: 1706352264}
   - component: {fileID: 1706352263}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: plank1 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32926,6 +32940,12 @@ Transform:
   m_PrefabParentObject: {fileID: 4347740633840594, guid: 52b3aa35714812a458730b990e149587,
     type: 2}
   m_PrefabInternal: {fileID: 2106141116}
+--- !u!114 &2108297367 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114595771845897544, guid: fb731d3a312e24847baba35e6dbb5e3f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2119441693}
+  m_Script: {fileID: 11500000, guid: b26aa991bf2a43247b16c88a19fe0aa1, type: 3}
 --- !u!1 &2109494147
 GameObject:
   m_ObjectHideFlags: 0
@@ -33062,6 +33082,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4306822401450410, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.4233563
@@ -33128,12 +33153,57 @@ Prefab:
         type: 2}
       propertyPath: OnTakingLetalDmg.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2108297367}
     - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
       propertyPath: OnHeal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1077536567}
+    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnTakingLetalDmg.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ResetCurrentLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 885730828}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
+      value: StartFade
+      objectReference: {fileID: 0}
+    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
+        type: 2}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: LockRotation
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}
   m_IsPrefabParent: 0

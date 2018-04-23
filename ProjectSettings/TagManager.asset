@@ -17,6 +17,7 @@ TagManager:
   - Sword
   - DeadFall
   - HeavyObject
+  - DMGObject
   layers:
   - Default
   - TransparentFX
@@ -28,8 +29,8 @@ TagManager:
   - 
   - World
   - Decoration
-  - 
-  - 
+  - NoIteractionPlayer
+  - PLayer
   - 
   - 
   - 

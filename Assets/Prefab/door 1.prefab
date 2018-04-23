@@ -1141,11 +1141,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316949010633146}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
+  m_IsTrigger: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 3, y: 4.1, z: 1}
-  m_Center: {x: -21.9, y: 13.87, z: 0.3}
+  m_Center: {x: -21.9, y: 10.7, z: 0.3}
 --- !u!95 &95054442591186356
 Animator:
   serializedVersion: 3
@@ -1155,7 +1155,7 @@ Animator:
   m_GameObject: {fileID: 1316949010633146}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cfeab7efdb4d746b9bc0a3a292fb0e07, type: 2}
+  m_Controller: {fileID: 9100000, guid: a220c96ca4e3b40378e4bec36dabe5f3, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

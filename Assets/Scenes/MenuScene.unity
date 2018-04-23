@@ -389,9 +389,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 22c5dac72af4b4474b0064b622d47f11, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.102
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf673750c43484ab6a0075a519352822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_backgroundAudioSource: Must_Be_a_Duck
+  m_backgroundAudioSource: The_Coal_Mine
 --- !u!4 &683952205
 Transform:
   m_ObjectHideFlags: 0

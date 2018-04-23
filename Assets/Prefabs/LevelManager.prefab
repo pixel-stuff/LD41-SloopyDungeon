@@ -53,6 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelScene:
   - MenuScene
-  - Niveau I
+  - Niveau 1
   - Niveau 2
+  - Niveau 3
   - Niveau 4
+  - Niveau 5

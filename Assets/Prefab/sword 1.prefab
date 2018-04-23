@@ -70,9 +70,11 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4991998171321706}
+  - component: {fileID: 136271510314724896}
+  - component: {fileID: 95712410797584060}
   m_Layer: 0
   m_Name: sword 1
-  m_TagString: Untagged
+  m_TagString: Sword
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,9 +154,9 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1234036811127280}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.13, y: 11.37, z: -9.64}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0.015608907, z: -0, w: 0.9998782}
+  m_LocalPosition: {x: 21.620861, y: 9.83, z: -0.26704025}
+  m_LocalScale: {x: 3.2602274, y: 3.2602298, z: 3.2602267}
   m_Children:
   - {fileID: 4692370107075428}
   - {fileID: 4684518508238676}
@@ -162,7 +164,7 @@ Transform:
   - {fileID: 4722552935657240}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 23.211, z: 0}
 --- !u!23 &23010467943812686
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -327,3 +329,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1233747139867236}
   m_Mesh: {fileID: 4300004, guid: ac8f6756fbf227048942162b29aa2dff, type: 3}
+--- !u!95 &95712410797584060
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234036811127280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9d8b3285edc352b4b9ce6f1c452e8bb3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!136 &136271510314724896
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1234036811127280}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 1.8099998
+  m_Height: 4.4126697
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.39633673, z: 0}

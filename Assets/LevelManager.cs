@@ -10,10 +10,12 @@ public class LevelManager : MonoBehaviour {
 
   // VAR
   int currentIndexScene = 0;
+	static bool InCHange = true;
 
   #region Singleton
   public static LevelManager m_instance;
   void Awake(){
+		InCHange = false;
     if(m_instance == null){
       //If I am the first instance, make me the Singleton
       m_instance = this;
@@ -28,12 +30,16 @@ public class LevelManager : MonoBehaviour {
   #endregion Singleton
 
   public void LoadNextScene(){
-    currentIndexScene++;
-    if(currentIndexScene > levelScene.Count){
-      SceneManager.LoadScene("MenuScene");
-    }else{
-      SceneManager.LoadScene(levelScene[currentIndexScene]);
-    }
+		if (!InCHange){
+			InCHange = true;
+			currentIndexScene++;
+		Debug.Log ("LoadScene " + currentIndexScene + "  " + levelScene [currentIndexScene]);
+		if (currentIndexScene > levelScene.Count) {
+			SceneManager.LoadScene ("MenuScene");
+		} else {
+			SceneManager.LoadScene (levelScene [currentIndexScene]);
+		}
+	}
   }
 
   public void ReloadCurrentScene(){

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4214629815423138}
   - component: {fileID: 82619882048978674}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SwordTakenSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4092917539355328}
   - component: {fileID: 82604272005938358}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SwordUseSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ GameObject:
   - component: {fileID: 114860414382093020}
   - component: {fileID: 114659958114951196}
   - component: {fileID: 114616702283308134}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Player
   m_TagString: player
   m_Icon: {fileID: 0}
@@ -79,7 +79,7 @@ GameObject:
   - component: {fileID: 114859305697338732}
   - component: {fileID: 114786317596274684}
   - component: {fileID: 114481794187413334}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: 2dPLayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4306822401450410}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PLayerWithUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,7 +110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4784079498589596}
   - component: {fileID: 82192667928512110}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: PlayerBeingHit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 4935366842543034}
   - component: {fileID: 212724986118210264}
   - component: {fileID: 95591743710540746}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

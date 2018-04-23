@@ -52,8 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelScene:
-  - LevelScene
-  - LevelScene
-  - LevelScene
-  - LevelScene
-  - LevelScene
+  - Niveau I
+  - Niveau 2
+  - Niveau 4
+  - TreasureScene

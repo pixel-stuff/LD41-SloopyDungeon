@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: 6fb407bff20b2a54985fe1e6a0d10757
+timeCreated: 1524492500
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: wall_segment_stone_plainte
+    100004: wall_segment_stonewall
+    100006: wall_segment_stonewall13
+    100008: wall_segment_stonewall14
+    100010: wall_segment_stonewall15
+    100012: wall_segment_stonewall16
+    100014: wall_segment_stonewall17
+    100016: wall_segment_stonewall18
+    100018: wall_segment_stonewall19
+    100020: wall_segment_stonewall20
+    100022: wall_segment_stonewall21
+    100024: wall_segment_stonewall22
+    100026: wall_segment_wall_part_midle
+    100028: wall_segment_wall_part_top
+    100030: wall_segment_wall_wood
+    100032: wall_top_wall_segment
+    400000: //RootNode
+    400002: wall_segment_stone_plainte
+    400004: wall_segment_stonewall
+    400006: wall_segment_stonewall13
+    400008: wall_segment_stonewall14
+    400010: wall_segment_stonewall15
+    400012: wall_segment_stonewall16
+    400014: wall_segment_stonewall17
+    400016: wall_segment_stonewall18
+    400018: wall_segment_stonewall19
+    400020: wall_segment_stonewall20
+    400022: wall_segment_stonewall21
+    400024: wall_segment_stonewall22
+    400026: wall_segment_wall_part_midle
+    400028: wall_segment_wall_part_top
+    400030: wall_segment_wall_wood
+    400032: wall_top_wall_segment
+    2100000: wall_segment_stone_plainteMat
+    2100002: wall_segment_stonewallMat
+    2100004: wall_segment_stonewall13Mat
+    2100006: wall_segment_stonewall14Mat
+    2100008: wall_segment_stonewall15Mat
+    2100010: wall_segment_stonewall16Mat
+    2100012: wall_segment_stonewall17Mat
+    2100014: wall_segment_stonewall18Mat
+    2100016: wall_segment_stonewall19Mat
+    2100018: wall_segment_stonewall20Mat
+    2100020: wall_segment_stonewall21Mat
+    2100022: wall_segment_stonewall22Mat
+    2100024: wall_segment_wall_part_midleMat
+    2100026: wall_segment_wall_part_topMat
+    2100028: wall_segment_wall_woodMat
+    2100030: wall_top_wall_segmentMat
+    2300000: wall_segment_stone_plainte
+    2300002: wall_segment_stonewall
+    2300004: wall_segment_stonewall13
+    2300006: wall_segment_stonewall14
+    2300008: wall_segment_stonewall15
+    2300010: wall_segment_stonewall16
+    2300012: wall_segment_stonewall17
+    2300014: wall_segment_stonewall18
+    2300016: wall_segment_stonewall19
+    2300018: wall_segment_stonewall20
+    2300020: wall_segment_stonewall21
+    2300022: wall_segment_stonewall22
+    2300024: wall_segment_wall_part_midle
+    2300026: wall_segment_wall_part_top
+    2300028: wall_segment_wall_wood
+    2300030: wall_top_wall_segment
+    3300000: wall_segment_stone_plainte
+    3300002: wall_segment_stonewall
+    3300004: wall_segment_stonewall13
+    3300006: wall_segment_stonewall14
+    3300008: wall_segment_stonewall15
+    3300010: wall_segment_stonewall16
+    3300012: wall_segment_stonewall17
+    3300014: wall_segment_stonewall18
+    3300016: wall_segment_stonewall19
+    3300018: wall_segment_stonewall20
+    3300020: wall_segment_stonewall21
+    3300022: wall_segment_stonewall22
+    3300024: wall_segment_wall_part_midle
+    3300026: wall_segment_wall_part_top
+    3300028: wall_segment_wall_wood
+    3300030: wall_top_wall_segment
+    4300000: wall_segment_stone_plainte
+    4300002: wall_segment_stonewall
+    4300004: wall_segment_stonewall13
+    4300006: wall_segment_stonewall14
+    4300008: wall_segment_stonewall15
+    4300010: wall_segment_stonewall16
+    4300012: wall_segment_stonewall17
+    4300014: wall_segment_stonewall18
+    4300016: wall_segment_stonewall19
+    4300018: wall_segment_stonewall20
+    4300020: wall_segment_stonewall21
+    4300022: wall_segment_stonewall22
+    4300024: wall_segment_wall_part_midle
+    4300026: wall_segment_wall_part_top
+    4300028: wall_segment_wall_wood
+    4300030: wall_top_wall_segment
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

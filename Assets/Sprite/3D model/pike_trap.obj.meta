@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 78b30dfc8291f3a4bb72b96e2ea45e95
+timeCreated: 1524487845
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: pCone23_pike
+    100002: pCone23_pike2
+    100004: pCone23_pike3
+    100006: pCone23_pike4
+    100008: pCone23_pike5
+    100010: pCone23_pike6
+    100012: pCone23_pike7
+    100014: pCone23_pike8
+    100016: pCone23_pike_hole
+    100018: pCone23_pike_hole1
+    100020: pCone23_pike_hole2
+    100022: pCone23_pike_hole3
+    100024: pCone23_pike_hole4
+    100026: pCone23_pike_hole5
+    100028: pCone23_pike_hole6
+    100030: pCone23_pike_hole7
+    100032: pCone23_pike_hole8
+    100034: pike1_pCone23
+    100036: //RootNode
+    400000: pCone23_pike
+    400002: pCone23_pike2
+    400004: pCone23_pike3
+    400006: pCone23_pike4
+    400008: pCone23_pike5
+    400010: pCone23_pike6
+    400012: pCone23_pike7
+    400014: pCone23_pike8
+    400016: pCone23_pike_hole
+    400018: pCone23_pike_hole1
+    400020: pCone23_pike_hole2
+    400022: pCone23_pike_hole3
+    400024: pCone23_pike_hole4
+    400026: pCone23_pike_hole5
+    400028: pCone23_pike_hole6
+    400030: pCone23_pike_hole7
+    400032: pCone23_pike_hole8
+    400034: pike1_pCone23
+    400036: //RootNode
+    2100000: pCone23_pikeMat
+    2100002: pCone23_pike2Mat
+    2100004: pCone23_pike3Mat
+    2100006: pCone23_pike4Mat
+    2100008: pCone23_pike5Mat
+    2100010: pCone23_pike6Mat
+    2100012: pCone23_pike7Mat
+    2100014: pCone23_pike8Mat
+    2100016: pCone23_pike_holeMat
+    2100018: pCone23_pike_hole1Mat
+    2100020: pCone23_pike_hole2Mat
+    2100022: pCone23_pike_hole3Mat
+    2100024: pCone23_pike_hole4Mat
+    2100026: pCone23_pike_hole5Mat
+    2100028: pCone23_pike_hole6Mat
+    2100030: pCone23_pike_hole7Mat
+    2100032: pCone23_pike_hole8Mat
+    2100034: pike1_pCone23Mat
+    2300000: pCone23_pike
+    2300002: pCone23_pike2
+    2300004: pCone23_pike3
+    2300006: pCone23_pike4
+    2300008: pCone23_pike5
+    2300010: pCone23_pike6
+    2300012: pCone23_pike7
+    2300014: pCone23_pike8
+    2300016: pCone23_pike_hole
+    2300018: pCone23_pike_hole1
+    2300020: pCone23_pike_hole2
+    2300022: pCone23_pike_hole3
+    2300024: pCone23_pike_hole4
+    2300026: pCone23_pike_hole5
+    2300028: pCone23_pike_hole6
+    2300030: pCone23_pike_hole7
+    2300032: pCone23_pike_hole8
+    2300034: pike1_pCone23
+    3300000: pCone23_pike
+    3300002: pCone23_pike2
+    3300004: pCone23_pike3
+    3300006: pCone23_pike4
+    3300008: pCone23_pike5
+    3300010: pCone23_pike6
+    3300012: pCone23_pike7
+    3300014: pCone23_pike8
+    3300016: pCone23_pike_hole
+    3300018: pCone23_pike_hole1
+    3300020: pCone23_pike_hole2
+    3300022: pCone23_pike_hole3
+    3300024: pCone23_pike_hole4
+    3300026: pCone23_pike_hole5
+    3300028: pCone23_pike_hole6
+    3300030: pCone23_pike_hole7
+    3300032: pCone23_pike_hole8
+    3300034: pike1_pCone23
+    4300000: pCone23_pike
+    4300002: pCone23_pike2
+    4300004: pCone23_pike3
+    4300006: pCone23_pike4
+    4300008: pCone23_pike5
+    4300010: pCone23_pike6
+    4300012: pCone23_pike7
+    4300014: pCone23_pike8
+    4300016: pCone23_pike_hole
+    4300018: pCone23_pike_hole1
+    4300020: pCone23_pike_hole2
+    4300022: pCone23_pike_hole3
+    4300024: pCone23_pike_hole4
+    4300026: pCone23_pike_hole5
+    4300028: pCone23_pike_hole6
+    4300030: pCone23_pike_hole7
+    4300032: pCone23_pike_hole8
+    4300034: pike1_pCone23
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

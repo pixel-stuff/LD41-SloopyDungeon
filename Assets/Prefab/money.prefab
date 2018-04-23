@@ -206,6 +206,8 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4618457385891468}
+  - component: {fileID: 54267202134410060}
+  - component: {fileID: 135850117496408162}
   m_Layer: 0
   m_Name: money
   m_TagString: Untagged
@@ -1145,7 +1147,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1307349765065988}
   m_LocalRotation: {x: -0, y: 0.20117432, z: -0, w: 0.9795555}
-  m_LocalPosition: {x: 4.0682616, y: -0.97791, z: -8.062757}
+  m_LocalPosition: {x: 7.34, y: -1.85, z: -3.12}
   m_LocalScale: {x: 0.32602307, y: 0.32602298, z: 0.32602298}
   m_Children:
   - {fileID: 4413930735119918}
@@ -3207,3 +3209,30 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1538453761939800}
   m_Mesh: {fileID: 4300046, guid: 5db10f41cf812514f8433ab53cfb6ce8, type: 3}
+--- !u!54 &54267202134410060
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307349765065988}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &135850117496408162
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307349765065988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.31
+  m_Center: {x: -15.56, y: 8.66, z: -9.8}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.5748171, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2023,6 +2023,46 @@ Prefab:
     - target: {fileID: 4739015511399748, guid: 897440d0930404b43b53331bfc99526f, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnActivateButton.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 659873031}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnActivateButton.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnActivateButton.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 659873030}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnActivateButton.m_PersistentCalls.m_Calls.Array.data[5].m_MethodName
+      value: SetTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnCoolDownOver.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 659873031}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnCoolDownOver.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnCoolDownOver.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 659873030}
+    - target: {fileID: 114806463203735212, guid: 897440d0930404b43b53331bfc99526f,
+        type: 2}
+      propertyPath: OnCoolDownOver.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: SetTrigger
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 897440d0930404b43b53331bfc99526f, type: 2}
@@ -4358,6 +4398,16 @@ Transform:
   m_Father: {fileID: 930705592}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &659873030 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 95054442591186356, guid: 4bfcea99718ba3c4dbe925ff903f5bbf,
+    type: 2}
+  m_PrefabInternal: {fileID: 836992156}
+--- !u!65 &659873031 stripped
+BoxCollider:
+  m_PrefabParentObject: {fileID: 65957269722011326, guid: 4bfcea99718ba3c4dbe925ff903f5bbf,
+    type: 2}
+  m_PrefabInternal: {fileID: 836992156}
 --- !u!1001 &663276572
 Prefab:
   m_ObjectHideFlags: 0
@@ -5932,6 +5982,11 @@ Prefab:
     - target: {fileID: 4104043501516770, guid: 4bfcea99718ba3c4dbe925ff903f5bbf, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 115.43101
+      objectReference: {fileID: 0}
+    - target: {fileID: 65957269722011326, guid: 4bfcea99718ba3c4dbe925ff903f5bbf,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4bfcea99718ba3c4dbe925ff903f5bbf, type: 2}

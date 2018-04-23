@@ -20,7 +20,7 @@ public class Player : TypedObject {
 	void Update () {
 		if(!CanStrike){
 			AttackOnMobCooldown -= Time.deltaTime;
-			Debug.Log (this.gameObject.name + "Cooldown");
+			//Debug.Log (this.gameObject.name + "Cooldown");
 			if (AttackOnMobCooldown < 0) {
 				CanStrike = true;
 				AttackOnMobCooldown = 1;
@@ -37,13 +37,13 @@ public class Player : TypedObject {
 		}
 
 		if (other.gameObject.tag == "Monster") {
-			Debug.Log (this.gameObject.name + "TOUCH the Monster");
+			//Debug.Log (this.gameObject.name + "TOUCH the Monster");
       if (this.gameObject.GetComponent<Inventory> ().HaveSword()) {
 				if(CanStrike){
         			OnSwordUse.Invoke ();
 					if (other.GetComponent<Life> ()) {
 						other.GetComponent<Life> ().TakeDommage (1);
-						Debug.Log (this.gameObject.name + "TOUCH the Monster and use sword on " + other.gameObject.name);
+						//Debug.Log (this.gameObject.name + "TOUCH the Monster and use sword on " + other.gameObject.name);
 						CanStrike = false;
 					//this.gameObject.GetComponent<Inventory> ().LostSword ();
 					}
@@ -58,7 +58,7 @@ public class Player : TypedObject {
 		}
 
 		if (other.gameObject.tag == "Door") {
-			Debug.Log (this.gameObject.name + "TOUCH the Door");
+			//Debug.Log (this.gameObject.name + "TOUCH the Door");
 			OnDoorTouch.Invoke ();
 			this.GetComponent<PlayerGameState> ().GotoNextLevel ();
 		}

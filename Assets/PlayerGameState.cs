@@ -9,12 +9,12 @@ public class PlayerGameState : MonoBehaviour {
 	}
 
 	public void GotoNextLevel(){
-    LevelManager.m_instance.LoadNextScene();
-
+		StartCoroutine(changeWorld ());
 	}
 
 	IEnumerator changeWorld(){
-		yield return new WaitForSeconds(2.0f);
-		Application.LoadLevel(Application.loadedLevel);
+		yield return new WaitForSeconds(4);
+		Debug.Log ("ChangeWorld");
+		LevelManager.m_instance.LoadNextScene();
 	}
 }

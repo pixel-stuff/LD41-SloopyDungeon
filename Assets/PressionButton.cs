@@ -26,7 +26,7 @@ public class PressionButton : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider other){
-		Debug.Log ("TouchTheButton");
+		//Debug.Log ("TouchTheButton");
 		if (other.gameObject.tag == "player" || other.gameObject.tag == "HeavyObject") {
 			if (!IsActivated) {
 				OnActivateButton.Invoke ();

@@ -26,7 +26,7 @@ public class RespawnOnDeadFall : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "DeadFall") {
-			Debug.Log (this.gameObject.name + "TOUCH the deadFall");
+			//Debug.Log (this.gameObject.name + "TOUCH the deadFall");
 			OnTouchDeadFall.Invoke ();
 		}
 	}

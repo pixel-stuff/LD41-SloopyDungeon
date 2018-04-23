@@ -28,8 +28,10 @@ public class LevelManager : MonoBehaviour {
   #endregion Singleton
 
   public void LoadNextScene(){
+    //Debug.Log("Load before : " + currentIndexScene + " -> " + levelScene[currentIndexScene] + " -> " + UnityEngine.StackTraceUtility.ExtractStackTrace ());
     currentIndexScene++;
-    if(currentIndexScene > levelScene.Count){
+    //Debug.Log("Load after : " + currentIndexScene + " -> " + levelScene[currentIndexScene]);
+    if(currentIndexScene >= levelScene.Count){
       SceneManager.LoadScene("MenuScene");
     }else{
       SceneManager.LoadScene(levelScene[currentIndexScene]);

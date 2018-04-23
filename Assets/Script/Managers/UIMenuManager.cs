@@ -29,8 +29,6 @@ public class UIMenuManager : MonoBehaviour {
 
 	public void GoToLevelScene(){
 		GameStateManager.setGameState (GameState.Playing);
-        a = SceneManager.LoadSceneAsync("LevelScene");
-		//a.allowSceneActivation = false;
-		timeStartLoading = Time.time;
+		LevelManager.m_instance.LoadNextScene();
 	}
 }

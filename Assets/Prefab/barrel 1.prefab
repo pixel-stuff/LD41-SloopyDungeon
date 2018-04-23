@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4319469026151700}
   - component: {fileID: 33739633803265858}
   - component: {fileID: 23794312361994766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel__barrel_couvercle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4212713908663104}
   - component: {fileID: 33176123414211102}
   - component: {fileID: 23062336662766782}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel__barrel_bouchon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4498801145023658}
   - component: {fileID: 33920978049216172}
   - component: {fileID: 23017167710485638}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel__barrel_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 4204777089365056}
   - component: {fileID: 33401044794624658}
   - component: {fileID: 23947523641006426}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel__cerclage_metal1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   - component: {fileID: 136959827315551600}
   - component: {fileID: 23989690178117052}
   - component: {fileID: 54191286510428032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Capsule
   m_TagString: HeavyObject
   m_Icon: {fileID: 0}
@@ -106,9 +106,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4950010316323372}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: barrel 1
-  m_TagString: Untagged
+  m_TagString: HeavyObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 4152086251918732}
   - component: {fileID: 33329232756494112}
   - component: {fileID: 23647451789722450}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: cerclage_metal_barrel_
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937223029194184}
   m_LocalRotation: {x: -0, y: -0.018537479, z: -0, w: 0.9998282}
-  m_LocalPosition: {x: 21.04, y: 5.35, z: 12.31}
+  m_LocalPosition: {x: 23.230022, y: 4.595863, z: 13.931676}
   m_LocalScale: {x: 0.9098041, y: 0.90980434, z: 0.9098043}
   m_Children:
   - {fileID: 4691631057754190}

@@ -53,7 +53,24 @@ public class LevelContainer2 : MonoBehaviour {
   /// <summary>
   /// Update this instance.
   /// </summary>
+	Vector3 MousePositionOnDown;
+	bool MousePositionOnDownAlreadySet = false;
+	public float DivisionFactor = 800;
   void Update() {
+		if (Input.GetButton ("Fire1")) {
+			Vector3 mousePosition = Input.mousePosition;
+			if(!MousePositionOnDownAlreadySet){
+				MousePositionOnDown = mousePosition;
+				MousePositionOnDownAlreadySet = true;
+			}
+			Debug.Log ("Mouse differentiel : " + (mousePosition - MousePositionOnDown).ToString());
+			//Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
+			currentAnglesToApply = -(mousePosition - MousePositionOnDown)/DivisionFactor;
+			currentAnglesToApply = new Vector3 (-currentAnglesToApply.y,0,currentAnglesToApply.x);
+		} else {
+			MousePositionOnDownAlreadySet = false;
+		}
+
 		if (!RotationIsLock) {
 			rotationTemp = transform.eulerAngles;
 

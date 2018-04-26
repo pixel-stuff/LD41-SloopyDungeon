@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.49641287, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -13682,6 +13682,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1643424117700800, guid: 0048c921c065c40aab3a45e48df93126, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0048c921c065c40aab3a45e48df93126, type: 2}
   m_IsPrefabParent: 0
@@ -18565,7 +18569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1499009655
 Transform:
   m_ObjectHideFlags: 0
@@ -33741,12 +33745,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4347740633840594, guid: 52b3aa35714812a458730b990e149587,
     type: 2}
   m_PrefabInternal: {fileID: 2106141116}
---- !u!114 &2108297367 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114595771845897544, guid: fb731d3a312e24847baba35e6dbb5e3f,
-    type: 2}
-  m_PrefabInternal: {fileID: 2119441693}
-  m_Script: {fileID: 11500000, guid: b26aa991bf2a43247b16c88a19fe0aa1, type: 3}
 --- !u!1 &2109494147
 GameObject:
   m_ObjectHideFlags: 0
@@ -33896,11 +33894,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 4306822401450410, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.4233563
@@ -33943,11 +33936,6 @@ Prefab:
       propertyPath: OnLoosingASword.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1077536567}
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 564577357}
     - target: {fileID: 114659958114951196, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
       propertyPath: OnTouchDeadFall.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -33965,59 +33953,19 @@ Prefab:
       objectReference: {fileID: 1077536567}
     - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
-      propertyPath: OnTakingLetalDmg.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 2108297367}
-    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
       propertyPath: OnHeal.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1077536567}
-    - target: {fileID: 114616702283308134, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnTakingLetalDmg.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ResetCurrentLevel
-      objectReference: {fileID: 0}
     - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Mode
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_BoolArgument
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
+      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 564577357}
     - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
         type: 2}
       propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Target
       value: 
       objectReference: {fileID: 885730828}
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_MethodName
-      value: SetTrigger
-      objectReference: {fileID: 0}
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[4].m_Arguments.m_StringArgument
-      value: StartFade
-      objectReference: {fileID: 0}
-    - target: {fileID: 114472078255048072, guid: fb731d3a312e24847baba35e6dbb5e3f,
-        type: 2}
-      propertyPath: OnDoorTouch.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: LockRotation
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}
   m_IsPrefabParent: 0

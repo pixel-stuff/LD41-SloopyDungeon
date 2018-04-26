@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4255486751319178}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: dalle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,8 @@ GameObject:
   - component: {fileID: 4324052684040766}
   - component: {fileID: 33708028724031604}
   - component: {fileID: 23853239354463212}
-  m_Layer: 0
+  - component: {fileID: 65260381197855104}
+  m_Layer: 8
   m_Name: dalle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +51,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1472551223774312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.345649, y: 0, z: 0.003943592}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4324052684040766}
@@ -111,3 +112,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1618858406633542}
   m_Mesh: {fileID: 4300000, guid: b91985d7bf0a3074ab2e7088edd2b862, type: 3}
+--- !u!65 &65260381197855104
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1618858406633542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8121755, y: 0.4841776, z: 2.8121748}
+  m_Center: {x: -23.256554, y: 11.750038, z: -7.5082664}

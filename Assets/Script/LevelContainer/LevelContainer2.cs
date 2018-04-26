@@ -55,7 +55,7 @@ public class LevelContainer2 : MonoBehaviour {
   /// </summary>
 	Vector3 MousePositionOnDown;
 	bool MousePositionOnDownAlreadySet = false;
-	public float DivisionFactor = 300;
+	public float DivisionFactor = 400;
   void Update() {
 		if (Input.GetButton ("Fire1")) {
 			Vector3 mousePosition = Input.mousePosition;

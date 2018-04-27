@@ -8,6 +8,9 @@ public class Player : TypedObject {
   [SerializeField] UnityEvent OnSwordUse;
   [SerializeField] UnityEvent OnPlayerBeingHit;
 	[SerializeField] UnityEvent OnDoorTouch;
+	[SerializeField] UnityEvent OnTileExit;
+	[SerializeField] UnityEvent OnTileEnter;
+	public GameObject StepParticules;
 
 	public override MyType GetType()
 	{
@@ -28,6 +31,22 @@ public class Player : TypedObject {
 		}
 	}
 
+	void OnCollisionEnter(Collision collision)
+	{
+		//Debug.Log("Collision with basic Tile");
+		if (collision.gameObject.GetComponent<MyTileBase>() != null) {
+			OnTileExit.Invoke ();
+			StepParticules.transform.position = collision.contacts [0].point;
+		}
+	}
+
+	void OnCollisionExit(Collision collision)
+	{
+		//Debug.Log("Collision END with basic Tile");
+		if (collision.gameObject.GetComponent<MyTileBase>() != null) {
+			OnTileEnter.Invoke ();
+		}
+	}
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag == "DMGObject") {

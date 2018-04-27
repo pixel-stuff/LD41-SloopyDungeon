@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33249315439003968}
   - component: {fileID: 23352762175646122}
   - component: {fileID: 65366588842931024}
+  - component: {fileID: 54579095300222832}
+  - component: {fileID: 114689812083640832}
   m_Layer: 8
   m_Name: dalle
   m_TagString: Untagged
@@ -51,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1462160153844806}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 19.862696, y: 0, z: 0.0105977245}
+  m_LocalPosition: {x: 2.8262732, y: 0, z: 0.008935146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4617023984893226}
@@ -112,6 +114,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1004608554653386}
   m_Mesh: {fileID: 4300000, guid: b91985d7bf0a3074ab2e7088edd2b862, type: 3}
+--- !u!54 &54579095300222832
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1004608554653386}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65366588842931024
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -124,3 +141,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.8121753, y: 0.4841776, z: 2.812175}
   m_Center: {x: -23.256554, y: 11.750038, z: -7.5082684}
+--- !u!114 &114689812083640832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1004608554653386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a2332f10f872004cbdbcb77e39f73de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TileType: 1
+  OnPlayerCollisionEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  OnPlayerCollisionExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null

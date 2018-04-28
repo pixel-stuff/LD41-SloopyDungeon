@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.496413, b: 0.5748175, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1748007216
+  randomSeed: -80091509
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5005,7 +5005,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2145939982
+  randomSeed: 826443184
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -10644,7 +10644,7 @@ Prefab:
     - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
         type: 2}
       propertyPath: randomSeed
-      value: 660210439
+      value: -1163329044
       objectReference: {fileID: 0}
     - target: {fileID: 1483506004850006, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
       propertyPath: m_Name
@@ -10663,6 +10663,16 @@ Prefab:
     - target: {fileID: 1483506004850006, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: startDelay.scalar
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
@@ -11675,7 +11685,7 @@ Prefab:
     - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
         type: 2}
       propertyPath: randomSeed
-      value: 2116882644
+      value: 1783689361
       objectReference: {fileID: 0}
     - target: {fileID: 1483506004850006, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
       propertyPath: m_Name
@@ -11694,6 +11704,16 @@ Prefab:
     - target: {fileID: 1483506004850006, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: startDelay.scalar
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
@@ -13540,7 +13560,7 @@ Prefab:
     - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
         type: 2}
       propertyPath: randomSeed
-      value: -325633131
+      value: 1132933102
       objectReference: {fileID: 0}
     - target: {fileID: 1483506004850006, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
       propertyPath: m_Name
@@ -13559,6 +13579,16 @@ Prefab:
     - target: {fileID: 1483506004850006, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
       propertyPath: m_Layer
       value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: startDelay.scalar
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
@@ -14315,7 +14345,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1643424117700800, guid: 0048c921c065c40aab3a45e48df93126, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0048c921c065c40aab3a45e48df93126, type: 2}
@@ -21205,6 +21235,26 @@ Prefab:
       propertyPath: m_Layer
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: randomSeed
+      value: 1137406825
+      objectReference: {fileID: 0}
+    - target: {fileID: 198189108114546870, guid: bb02ef131a4d7134a9948b0cdc880b01,
+        type: 2}
+      propertyPath: startDelay.scalar
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb02ef131a4d7134a9948b0cdc880b01, type: 2}
   m_IsPrefabParent: 0
@@ -27817,7 +27867,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -421204031
+  randomSeed: -560892552
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -31462,7 +31512,7 @@ Prefab:
       objectReference: {fileID: 1962902679}
     - target: {fileID: 1627877469677358, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fb731d3a312e24847baba35e6dbb5e3f, type: 2}

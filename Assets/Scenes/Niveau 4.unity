@@ -1034,7 +1034,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -80091509
+  randomSeed: 1661641406
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5005,7 +5005,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 826443184
+  randomSeed: -1208085147
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5407,7 +5407,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.8
+      scalar: 10
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -9848,6 +9848,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 52b3aa35714812a458730b990e149587, type: 2}
   m_IsPrefabParent: 0
+--- !u!20 &454839749 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20361482817637546, guid: 321ece6b319364113ba1fa12cdb2e82f,
+    type: 2}
+  m_PrefabInternal: {fileID: 528474223}
 --- !u!1001 &475038476
 Prefab:
   m_ObjectHideFlags: 0
@@ -14347,6 +14352,16 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 223570411109122762, guid: 0048c921c065c40aab3a45e48df93126,
+        type: 2}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 223570411109122762, guid: 0048c921c065c40aab3a45e48df93126,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 454839749}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0048c921c065c40aab3a45e48df93126, type: 2}
   m_IsPrefabParent: 0
@@ -27867,7 +27882,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -560892552
+  randomSeed: -1766389437
   InitialModule:
     serializedVersion: 3
     enabled: 1
